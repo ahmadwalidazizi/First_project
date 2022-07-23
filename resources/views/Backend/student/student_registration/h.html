@@ -1,0 +1,348 @@
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/bootstrap-multiselect.css">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/dataTables.min.css">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/jquery-ui.css">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/font-awesome.css">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/popup.css">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/style.css">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/dashboard.css">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/fullcalendar.min.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/bootstrap5.min.css">	
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/white.css">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/schoolmgt.min.css">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/simple-line-icons.css">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/lib/validationEngine/css/validationEngine.jquery.css">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/school-responsive.css">
+<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/dataTables.responsive.css">
+
+
+	<link rel="stylesheet" href="https://school.pushnifty.com/wp-content/plugins/school-management/assets/css/smgt-customcss.css">
+	<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/jquery-3.6.0.min.js"></script>
+
+<!-- <script type="text/javascript"	src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/popup.js"></script> -->
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/popper.min.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/jquery.timeago.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/jquery-ui.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/moment.min.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/fullcalendar.min.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/calendar-lang/en.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/datatables.min.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/dataTables.tableTools.min.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/dataTables.editor.min.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/dataTables.responsive.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/bootstrap5.min.js"></script>
+<!-- Print -->
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/smgt-dataTables-buttons-min.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/smgt-buttons-print-min.js"></script>
+<!--  -->
+
+
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/lib/validationEngine/js/languages/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/lib/validationEngine/js/jquery.validationEngine.js"></script>
+
+<!--- Demo pages Add Js for frontend --->
+				
+			<script type="text/javascript" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/js/popup.js" id="smgt-popup-front-js-s"></script>
+			<script id="smgt-popup-front-js-extra">
+			var smgt = {"ajax":"https://school.pushnifty.com/wp-admin/admin-ajax.php"};
+			var language_translate2 = {"edit_record_alert":"Are you sure want to edit this record?","category_alert":"You must fill out the field!","class_limit_alert":"Class Limit Is Full.","enter_room_alert":"Please Enter Room Category Name.","enter_value_alert":"Please Enter Value.","delete_record_alert":"Are you sure want to delete this record?","select_hall_alert":"Please Select Exam Hall","one_record_alert":"Please Checked Atleast One Student","one_record_select_alert":"Please select atleast one record",
+            "one_class_select_alert":"Please select atleast one class",
+            "lower_starting_year_alert":"You can not select year lower then starting year",
+            "do_delete_record":"Do you really want to delete this ?",
+            "select_one_book_alert":"Please select atleast one boo",
+            "select_different_student_alert":"Please Select Different Student",
+            "same_email_alert":"you have used the same email",
+            "image_forame_alert":"Only '.jpeg','.jpg', '.png', '.bmp' formats are allowed.",
+            "more_then_exam_date_time":"Fail! More than one subject exam date & time same.",
+            "single_entry_alert":"There is only single entry,You can not remove it.",
+            "one_teacher_alert":"Please select atleast one teacher",
+            "one_message_alert":"Please select atleast one message",
+            "large_file_Size_alert":"Too large file Size. Only file smaller than 10MB can be uploaded.",
+            "pdf_alert":"Only pdf formate are allowed.",
+            "starting_year_alert":"You can not select year lower then starting year",
+            "one_user_replys_alert":"Please select atleast one users to replys",
+            "csv_alert":"Problems with user: we are going to skip"
+            };
+			</script>
+					<!--- Demo pages Add Js for frontend --->
+<script>
+	$ = jQuery.noConflict();
+   var calendar_laungage ="en";
+	document.addEventListener('DOMContentLoaded', function() {
+	var calendarEl = document.getElementById('calendar');
+	var calendar = new FullCalendar.Calendar(calendarEl, {
+
+		initialView: 'dayGridMonth',
+		locale: calendar_laungage,
+		headerToolbar: {
+			left: 'prev,next today',
+			center: 'title',
+			right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+		},
+
+		events: [{"type":"class","title":"English","class_name":"Class 1","subject":"English","start":"10:00:00","end":"00:00:00","agenda":"","teacher":null,"role":"teacher","meeting_start_link":"https:\/\/us06web.zoom.us\/s\/82194311897?zak=eyJ0eXAiOiJKV1QiLCJzdiI6IjAwMDAwMSIsInptX3NrbSI6InptX28ybSIsImFsZyI6IkhTMjU2In0.eyJhdWQiOiJjbGllbnRzbSIsInVpZCI6IkRjZkxEQzVNUUYyUWxhWHUzeE9VYUEiLCJpc3MiOiJ3ZWIiLCJzayI6IjAiLCJzdHkiOjEwMCwid2NkIjoidXMwNiIsImNsdCI6MCwibW51bSI6IjgyMTk0MzExODk3IiwiZXhwIjoxNjQ3MjY1NjQwLCJpYXQiOjE2NDcyNTg0NDAsImFpZCI6IlpSVXNuT3NDUVI2NjROZ092VEh6eHciLCJjaWQiOiIifQ.I82dmBT_UYEJV6r0BFiIlhSAv7QZVqCrhq37wSA9bUI","dow":[1],"color":"rgb(46, 138, 194)"},{"type":"class","title":"English","class_name":"Class 1","subject":"English","start":"14:00:00","end":"00:00:00","agenda":null,"teacher":null,"role":"teacher","meeting_start_link":null,"dow":[1],"color":"rgb(91,112,222)"},{"type":"class","title":"Computer","class_name":"Class 1","subject":"Computer","start":"16:00:00","end":"00:00:00","agenda":null,"teacher":null,"role":"teacher","meeting_start_link":null,"dow":[1],"color":"rgb(91,112,222)"},{"type":"class","title":"English","class_name":"Class 1","subject":"English","start":"10:00:00","end":"00:00:00","agenda":null,"teacher":null,"role":"teacher","meeting_start_link":null,"dow":[2],"color":"rgb(91,112,222)"},{"type":"class","title":"Computer","class_name":"Class 1","subject":"Computer","start":"11:00:00","end":"00:00:00","agenda":null,"teacher":null,"role":"teacher","meeting_start_link":null,"dow":[2],"color":"rgb(91,112,222)"},{"type":"class","title":"Computer","class_name":"Class 1","subject":"Computer","start":"04:00:00","end":"00:00:00","agenda":null,"teacher":null,"role":"teacher","meeting_start_link":null,"dow":[3],"color":"rgb(91,112,222)"},{"type":"class","title":"English","class_name":"Class 1","subject":"English","start":"10:00:00","end":"00:00:00","agenda":null,"teacher":null,"role":"teacher","meeting_start_link":null,"dow":[5],"color":"rgb(91,112,222)"},{"type":"class","title":"Computer","class_name":"Class 1","subject":"Computer","start":"04:00:00","end":"00:00:00","agenda":null,"teacher":null,"role":"teacher","meeting_start_link":null,"dow":[5],"color":"rgb(91,112,222)"},{"type":"class","title":"English","class_name":"Class 1","subject":"English","start":"10:00:00","end":"00:00:00","agenda":null,"teacher":null,"role":"teacher","meeting_start_link":null,"dow":[6],"color":"rgb(91,112,222)"},{"type":"class","title":"Computer","class_name":"Class 1","subject":"Computer","start":"11:00:00","end":"00:00:00","agenda":null,"teacher":null,"role":"teacher","meeting_start_link":null,"dow":[6],"color":"rgb(91,112,222)"},{"type":"class","title":"Computer","class_name":"Class 1","subject":"Computer","start":"02:00:00","end":"00:00:00","agenda":null,"teacher":null,"role":"teacher","meeting_start_link":null,"dow":[6],"color":"rgb(91,112,222)"},{"type":"notice","title":"Noti da Spin","start":"2022-03-15","end":"2022-04-01"},{"type":"notice","title":"Ggg","start":"2022-03-05","end":"2022-03-08"},{"type":"notice","title":"parents meeting","start":"2022-03-05","end":"2022-03-06"},{"type":"notice","title":"notice for excursion","start":"2022-01-21","end":"2022-01-23"},{"type":"notice","title":"school on holiday","start":"2021-12-20","end":"2021-12-30"},{"type":"holiday","title":"Christmas Day","start":"2021-12-25","end":"2021-12-26","color":"rgb(91,192,222)"},{"type":"holiday","title":"New year","start":"2022-01-01","end":"2022-01-02","color":"rgb(91,192,222)"},{"type":"holiday","title":"Independence Day","start":"2022-08-17","end":"2022-08-18","color":"rgb(91,192,222)"},{"type":"holiday","title":"Republicday","start":"2022-01-26","end":"2022-01-27","color":"rgb(91,192,222)"},{"type":"holiday","title":"school aniversary","start":"2022-03-10","end":"2022-03-11","color":"rgb(91,192,222)"},{"type":"holiday","title":"Holi Festivel","start":"2022-03-18","end":"2022-03-19","color":"rgb(91,192,222)"},{"type":"holiday","title":"Christmas Day","start":"2022-03-11","end":"2022-03-13","color":"rgb(91,192,222)"},{"type":"holiday","title":"Dhuleti","start":"2022-03-17","end":"2022-03-21","color":"rgb(91,192,222)"}],
+		
+	});
+		calendar.render();
+	});
+
+	
+</script>
+ 
+</head>
+<!--task-event POP up code -->
+<body class="schoo-management-content"><div class="popup-bg">
+    <div class="overlay-content content_width">
+		<div class="modal-content d-modal-style">
+			<div class="task_event_list">
+			</div>     
+		</div>
+    </div>     
+</div>
+<!-- End task-event POP-UP Code -->
+<!-- CLASS BOOK IN CALANDER POPUP HTML CODE -->
+<div id="eventContent" class="modal-body display_none height_auto"><!--MODAL BODY DIV START-->
+	
+	<p class="margin_0px"><b>Class Name:</b> <span id="class_name"></span></p><br>
+	<p class="margin_0px"><b>Subject:</b> <span id="subject"></span></p><br>
+	<p class="margin_0px"><b>Date: </b> <span id="date"></span></p><br>
+	<p class="margin_0px"><b>Time: </b> <span id="time"></span></p><br>
+	<p class="margin_0px"><b>Teacher Name:</b> <span id="teacher_name"></span></p><br>
+	<p id="agenda" class="class_schedule_topic margin_0px"></p><br>
+	<p id="meeting_start_link" class="margin_0px"></p>
+</div>
+<!--MODAL BODY DIV END-->
+
+    <div class="container-fluid mainpage">
+  
+  <div class="navbar row">	
+	<div class="col-md-8 col-sm-8 col-xs-6 navbar_row_with_50">
+		<h3><img src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/finel-logo6.png" class="img-circle rounded-circle head_logo" width="40" height="40">
+		<span>Ahmedabad International School </span>
+		</h3>
+	</div>
+	<div class="col-md-4 col-sm-4 col-xs-6 full_with_50_per">	
+		<ul class="nav navbar-right col-xs-6">				
+			<li class="dropdown ms-auto">
+			<!-- <a id="dropdownMenufront" data-toggle="dropdown" aria-expanded="false"	class="dropdown-toggle" href="javascript:;"> -->
+			<a id="dropdownMenufront" data-toggle="dropdown" class="border-0 btn btn-default dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+			<img src="https://school.pushnifty.com/wp-content/uploads/school_assets/1647303030-pimg-in.jpg" height="40px" width="40px" class="img-circle rounded-circle">				<span>Viraj Bhatt </span> <b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu extended logout ms-auto" aria-labelledby="dropdownMenufront">
+				<li><a class="dropdown-item" href="?dashboard=user&amp;page=account"><i class="fa fa-user"></i>
+					My Profile</a></li>
+				<li><a class="dropdown-item" href="https://school.pushnifty.com/wp-login.php?action=logout&amp;redirect_to=https%3A%2F%2Fschool.pushnifty.com&amp;_wpnonce=7d49b83166"><i class="fa fa-sign-out-alt m-r-xs"></i>Log Out </a></li>
+			</ul>
+			</li><!-- END USER LOGIN DROPDOWN -->
+		</ul>
+		</div>
+	</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2 col-md-2 nopadding school_left nav-side-menu">
+				<div class="brand">Menu					<i class="fa fa-bars fa-2x toggle-btn avbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-content" aria-expanded="false"></i>
+				</div>
+	<ul class="nav nav-pills nav-stacked collapse in responsive_menu" id="menu-content">  
+		<li><a href="https://school.pushnifty.com" class="text-decoration-none"><span class="icone"><img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/home.png"></span><span class="title">Home</span></a></li>
+		<li><a href="?dashboard=user" class="text-decoration-none"><span class="icone"><img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/dashboard.png"></span>
+			<span class="title">Dashboard</span></a> </li>
+        <li class=" "><a href="?dashboard=user&amp;page=teacher" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/teacher.png"></span><span class="title">Teacher</span></a></li><li class=" "><a href="?dashboard=user&amp;page=student" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/student-icon.png"></span><span class="title">Student</span></a></li><li class=" "><a href="?dashboard=user&amp;page=parent" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/parents.png"></span><span class="title">Parent</span></a></li><li class=" "><a href="?dashboard=user&amp;page=subject" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/subject.png"></span><span class="title">Subject</span></a></li><li class=" "><a href="?dashboard=user&amp;page=class" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/class.png"></span><span class="title">Class</span></a></li><li class=" "><a href="?dashboard=user&amp;page=virtual_classroom" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/virtual_classroom.png"></span><span class="title">Virtual Classroom</span></a></li><li class=" "><a href="?dashboard=user&amp;page=schedule" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/class-route.png"></span><span class="title class_routine">Class Routine</span></a></li><li class="active "><a href="?dashboard=user&amp;page=attendance" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/attandance.png"></span><span class="title">Attendance</span></a></li><li class=" "><a href="?dashboard=user&amp;page=exam" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/exam.png"></span><span class="title">Exam</span></a></li><li class=" "><a href="?dashboard=user&amp;page=hostel" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/hostel.png"></span><span class="title">Hostel</span></a></li><li class=" "><a href="?dashboard=user&amp;page=homework" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/homework.png"></span><span class="title">Homework</span></a></li><li class=" "><a href="?dashboard=user&amp;page=manage_marks" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/mark-manage.png"></span><span class="title">Manage Marks</span></a></li><li class=" "><a href="?dashboard=user&amp;page=feepayment" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/fee.png"></span><span class="title">Fee Payment</span></a></li><li class=" "><a href="?dashboard=user&amp;page=transport" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/transport.png"></span><span class="title">Transport</span></a></li><li class=" "><a href="?dashboard=user&amp;page=notice" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/notice.png"></span><span class="title">Notice Board</span></a></li><li class=" "><a href="?dashboard=user&amp;page=message" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/message.png"></span><span class="title class_routine">Message</span><span class="badge badge-success">0</span></a></li><li class=" "><a href="?dashboard=user&amp;page=holiday" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/holiday.png"></span><span class="title">Holiday</span></a></li><li class=" "><a href="?dashboard=user&amp;page=library" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/library.png"></span><span class="title">Library</span></a></li><li class=" "><a href="?dashboard=user&amp;page=account" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/account.png"></span><span class="title">Account</span></a></li><li class=" "><a href="?dashboard=user&amp;page=report" class="text-decoration-none"><span class="icone"> <img class="h-auto w-18-px" src="https://school.pushnifty.com/wp-content/plugins/school-management/assets/images/icons/report.png"></span><span class="title">Report</span></a></li>							
+    </ul>
+</div>
+		
+	<div class="page-inner full_with_100_per">
+	<div id="main-wrapper_fronend">
+	<div class="right_side attendance">
+   <script type="text/javascript">
+jQuery(document).ready(function($){
+	"use strict";	
+	$('#student_attendance').validationEngine({promptPosition : "bottomRight",maxErrorsPerField: 1});
+	$('#curr_date_sub123').datepicker({maxDate:'0',dateFormat: "yy-mm-dd"});
+	$('#subject_attendance').validationEngine({promptPosition : "bottomRight",maxErrorsPerField: 1});
+	$('#curr_date_sub').datepicker({maxDate:'0',dateFormat: "yy-mm-dd"});
+});
+</script>
+<div class="panel-body panel-white p-4">
+	<ul class="nav nav-tabs panel_tabs" role="tablist">
+		<li class="nav-item">
+			<a href="?dashboard=user&amp;page=attendance&amp;tab=daily_attendence" class="nav-link nav-tab2 active" "="">
+				<i class="fa fa-align-justify"></i> Attendance</a>
+			
+		</li>
+		<li class="nav-item">
+			<a href="?dashboard=user&amp;page=attendance&amp;tab=sub_attendence" class="nav-link nav-tab2 margin_bottom  ">
+				<i class="fa fa-align-justify"></i> Subject Wise Attendance</a>
+			
+		</li>	
+	</ul>
+<div class="tab-content">
+    <div class="panel-body">
+		<form method="post" id="student_attendance">  
+			<input type="hidden" name="class_id" value="0">  
+			<div class="row">
+				<div class="form-group col-md-2">
+					<label class="control-label" for="curr_date">Date</label>
+					<input id="curr_date_sub123" class="form-control hasDatepicker" type="text" value="2022-03-01" name="curr_date" readonly="">
+				</div>
+				<div class="form-group col-md-2">
+					<label for="class_id">Select Class<span class="require-field">*</span></label>
+										<select name="class_id" id="class_list" class="form-control validate[required]">
+						<option value=" ">Select class</option>
+												   <option value="1" selected="selected">Class 1</option>
+					 						   <option value="2">Class 2</option>
+					 						   <option value="3">Class 3</option>
+					 						   <option value="4">Class 4</option>
+					 						   <option value="5">Class 5</option>
+					 						   <option value="6">Class 6</option>
+					 					</select>
+				</div>
+				<div class="form-group col-md-2">
+					<label for="class_id">Select Class Section</label>
+										<select name="class_section" class="form-control" id="class_section">
+							<option value="">Select Section</option>
+														 <option value="6" selected="selected">Section A</option>
+															 <option value="7">Section B</option>
+												</select>
+				</div>
+				<div class="form-group col-md-3 button-possition">                    
+					<input type="submit" value="Take/View  Attendance" name="attendence" class="btn btn-success">
+				</div> 
+			</div>
+
+		</form>
+	<div class="clearfix"></div>
+                  
+			
+		<form method="post" class="form-horizontal mt-4">        
+			<input type="hidden" name="class_id" value="1">
+			<input type="hidden" name="class_section" value="6">
+			<input type="hidden" name="curr_date" value="2022-03-01">
+        
+			<div class="panel-heading">
+				<h4 class="panel-title"> Class : Class 1 , 
+				Date : 2022-03-01</h4>
+			</div>
+        
+          <div class="col-md-12">
+			<div class="table-responsive">
+			<table class="table">
+				<tbody><tr>
+					<th>Srno</th>
+					<th>Roll No.</th>
+					<th>Student</th>
+					<th>Attendance</th>
+					<th>Comment</th>
+				</tr>
+				<tr><td>1</td><td><span>001</span></td><td><span>Student Web</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_3" value="Present" checked="checked">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_3" value="Absent">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_3" value="Late">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_3" class="form-control" value=""></td></tr><tr><td>2</td><td><span>002</span></td><td><span>student App</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_4" value="Present" checked="checked">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_4" value="Absent">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_4" value="Late">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_4" class="form-control" value="Atrasado"></td></tr><tr><td>3</td><td><span>004</span></td><td><span>Abubakar Eljaiz</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_431" value="Present">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_431" value="Absent" checked="checked">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_431" value="Late">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_431" class="form-control" value=""></td></tr><tr><td>4</td><td><span>10001</span></td><td><span>Ajaya Bhuyan</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_618" value="Present">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_618" value="Absent">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_618" value="Late" checked="checked">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_618" class="form-control" value=""></td></tr><tr><td>5</td><td><span>105</span></td><td><span>likhithsai kankanampati</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_636" value="Present">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_636" value="Absent">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_636" value="Late" checked="checked">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_636" class="form-control" value=""></td></tr><tr><td>6</td><td><span>1111</span></td><td><span>Ibtisam Bari</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_644" value="Present" checked="checked">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_644" value="Absent">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_644" value="Late">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_644" class="form-control" value=""></td></tr><tr><td>7</td><td><span>000000123</span></td><td><span>Enzo Prova</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_682" value="Present" checked="checked">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_682" value="Absent">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_682" value="Late">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_682" class="form-control" value=""></td></tr><tr><td>8</td><td><span>652652</span></td><td><span>test test</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_694" value="Present" checked="checked">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_694" value="Absent">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_694" value="Late">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_694" class="form-control" value=""></td></tr><tr><td>9</td><td><span>2233</span></td><td><span>Abaad Nadeem</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_714" value="Present">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_714" value="Absent" checked="checked">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_714" value="Late">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_714" class="form-control" value=""></td></tr><tr><td>10</td><td><span>101</span></td><td><span>mahesh pasam</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_717" value="Present" checked="checked">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_717" value="Absent">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_717" value="Late">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_717" class="form-control" value=""></td></tr><tr><td>11</td><td><span>0111111</span></td><td><span>shashank bhardwaj</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_726" value="Present" checked="checked">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_726" value="Absent">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_726" value="Late">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_726" class="form-control" value=""></td></tr><tr><td>12</td><td><span>100</span></td><td><span>Ali  Nadeem</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_728" value="Present" checked="checked">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_728" value="Absent">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_728" value="Late">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_728" class="form-control" value=""></td></tr><tr><td>13</td><td><span>1895623</span></td><td><span>rishab saxena</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_732" value="Present" checked="checked">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_732" value="Absent">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_732" value="Late">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_732" class="form-control" value=""></td></tr><tr><td>14</td><td><span>6757656</span></td><td><span>Vuqar ALAKBAROV</span></td>                <td><label class="radio-inline"><input type="radio" name="attendanace_740" value="Present" checked="checked">
+                Present</label>
+				<label class="radio-inline"> <input type="radio" name="attendanace_740" value="Absent">
+				 Absent</label>
+				 <label class="radio-inline"><input type="radio" name="attendanace_740" value="Late">
+				Late</label></td>
+				<td><input type="text" name="attendanace_comment_740" class="form-control" value=""></td></tr>                   
+			</tbody></table>
+		</div>
+		<div class="form-group row mb-3">
+			<label class="col-sm-4 control-label col-form-label text-md-end" for="enable">If student absent then Send  SMS to his/her parents</label>
+			<div class="col-sm-2 pt-2 ps-0">
+				 <div class="checkbox">
+				 	<label>
+  						<input id="chk_sms_sent1" type="checkbox" value="1" name="smgt_sms_service_enable">
+  					</label>
+  				</div>				 
+			</div>
+		</div>
+	</div>
+	<input type="hidden" id="_wpnonce" name="_wpnonce" value="b95d2e514c"><input type="hidden" name="_wp_http_referer" value="/?dashboard=user&amp;page=attendance&amp;tab=daily_attendence">	<div class="col-sm-12"> 
+        <input type="submit" value="Save  Attendance" name="save_attendence" class="btn btn-success">
+    </div>      
+</form>		
+</div>
+</div>	
+</div>
+ </div></div></div></div></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>
